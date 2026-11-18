@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #1e3a8a;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Teacher Dashboard */
+
+.dashboard {
+    max-width: 1100px;
+}
+
+.dashboard .header h1 {
+    color: #1e3a8a;
+}
+
+#loadButton {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 750px;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background: #eff6ff;
+    color: #1e3a8a;
+}
+
+td {
+    color: #475569;
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+.download-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+#dashboardMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dashboard > a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}

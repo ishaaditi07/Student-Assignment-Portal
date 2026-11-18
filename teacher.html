@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container dashboard">
+        <div class="header">
+            <h1>Teacher Dashboard</h1>
+            <p>View and download student assignments.</p>
+        </div>
+
+        <button id="loadButton">Load Submissions</button>
+
+        <p id="dashboardMessage"></p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll Number</th>
+                        <th>Subject</th>
+                        <th>Assignment</th>
+                        <th>Submission Date</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody id="submissionTable">
+                    <tr>
+                        <td colspan="6">Click Load Submissions to view records.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="index.html">Back to Student Submission</a>
+    </div>
+
+    <script src="teacher.js"></script>
+</body>
+</html>

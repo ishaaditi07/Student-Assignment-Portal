@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assignment Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Assignment Submission Portal</h1>
+            <p>Submit your assignments securely online.</p>
+        </div>
+
+        <form id="submissionForm">
+
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your full name" required>
+
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" id="rollNumber" placeholder="Enter your roll number" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Enter subject name" required>
+
+            <label for="assignmentTitle">Assignment Title</label>
+            <input type="text" id="assignmentTitle" placeholder="Enter assignment title" required>
+
+            <label for="file">Upload Assignment (PDF only)</label>
+            <input type="file" id="file" accept=".pdf,application/pdf" required>
+
+            <button type="submit" id="submitButton">Submit Assignment</button>
+
+            <p id="message"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
